@@ -1,12 +1,11 @@
-// TODO: Include packages needed for this application
-
-import inquirer from 'inquirer';
 import fs from 'fs';
 import generateMarkdown from './utils/generateMarkdown.js';
 
 
-// TODO: Create an array of questions for user input
+// TODO: Include packages needed for this application
+import inquirer from 'inquirer';
 
+// TODO: Create an array of questions for user input
 inquirer.prompt([
   {
     name: 'title',
@@ -56,36 +55,9 @@ inquirer.prompt([
   }
 ])
 .then((response) => {
-  console.log(response);
-
-  const readmeTemplate = `
-
-  # ${response.title}
-
-  ## Description
-
-  ${response.description}
-
-  ## Table of Contents
-
-  N/A
-
-  ## Installation
-
-  ${response.installation}
-
-  ## Usage
-
-  ${response.usage}
-
-  ## Credits
-
-  ${response.contribution}
-
-  ## Tests
-
-  ${response.test}
-  `;
+  const data = response;
+  console.log(data);
+  console.log(generateMarkdown(data));
 })
 
 // TODO: Create a function to write README file
