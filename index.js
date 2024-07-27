@@ -1,12 +1,11 @@
 import fs from 'fs';
 import generateMarkdown from './utils/generateMarkdown.js';
 
-
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 
 // TODO: Create an array of questions for user input
-inquirer.prompt([
+const data = await inquirer.prompt([
   {
     name: 'title',
     type: 'input',
@@ -52,19 +51,20 @@ inquirer.prompt([
     name: 'email',
     type: 'input',
     message: 'Enter your email address.',
-  }
-])
-.then((response) => {
-  const data = response;
-  console.log(data);
-  console.log(generateMarkdown(data));
-})
+  },
+]);
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(`./readme-examples/README.md`, generateMarkdown(data), (err) =>
+    err ? console.error(err) : console.log('Success!')
+  );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  writeToFile('README.md', data);
+}
 
 // Function call to initialize app
 init();
