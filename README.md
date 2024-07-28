@@ -22,6 +22,8 @@
 
   Open the local repository in VS Code, start a new terminal in the readme-generator folder (main folder), and enter "node index.js" into the command-line interface. Answer the prompted questions.
 
+  Video Demonstration: [Readme Generator Video Demonstration](https://drive.google.com/file/d/1s83tteZ-LO5NV7V96ar3l7Kzy3N0XLqt/view)
+
   ## Credits
 
   Zander Kubajak
