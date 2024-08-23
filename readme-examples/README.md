@@ -39,6 +39,6 @@
 
   For any questions, please contact me through GitHub or my work email.
 
-  GitHub: [ZVKubajak](github.com/ZVKubajak)
+  GitHub: [ZVKubajak](https://github.com/ZVKubajak)
   
   Email: zvkubajak@gmail.com
