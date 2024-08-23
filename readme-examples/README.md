@@ -1,10 +1,10 @@
 
-  # Readme Generator
+  # test
   ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
 
-  An application that allows users to quickly and easily create a professional README for their GitHub projects.
+  test
 
   ## Table of Contents
 
@@ -17,19 +17,19 @@
 
   ## Installation
 
-  Clone this repository to your local computer. Make sure Node.js is installed in order to run the application.
+  test
 
   ## Usage
 
-  Open the local repository in VS Code, start a new terminal in the readme-generator folder (main folder), and enter "node index.js" into the command-line interface. Answer the prompted questions.
+  test
 
   ## Credits
 
-  Zander Kubajak
+  test
 
   ## Tests
 
-  N/A
+  test
 
   ## License
 
@@ -39,7 +39,6 @@
 
   For any questions, please contact me through GitHub or my work email.
 
-  GitHub: ZVKubajak
+  GitHub: [ZVKubajak](github.com/ZVKubajak)
   
   Email: zvkubajak@gmail.com
-  
